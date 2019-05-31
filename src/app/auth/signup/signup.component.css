@@ -1,0 +1,9 @@
+mat-form-field {
+    width: 300px;
+}
+
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
