@@ -3,7 +3,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import {MatRadioModule} from '@angular/material/radio';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [],
@@ -12,14 +14,18 @@ import {MatRadioModule} from '@angular/material/radio';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   exports: [
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSidenavModule,
+    MatToolbarModule
   ]
 })
 export class MaterialModule { }

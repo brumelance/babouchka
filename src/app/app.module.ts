@@ -6,8 +6,6 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AppRoutingModule } from './appp-routing.module';
-import { MenuComponent } from './navigation/menu/menu.component';
-import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,9 +16,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppComponent,
     SignupComponent,
     HomeComponent,
-    LoginComponent,
-    MenuComponent,
-    SidenavComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
