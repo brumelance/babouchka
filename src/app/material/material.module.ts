@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { 
+  MatFormFieldModule,
+  MatInputModule,
+  MatButtonModule,
+  MatIconModule,
+  MatRadioModule,
+  MatSidenavModule,
+  MatToolbarModule,
+  MatListModule
+ } from '@angular/material';
 
 @NgModule({
   declarations: [],
@@ -16,7 +19,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatIconModule,
     MatRadioModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule
   ],
   exports: [
     MatFormFieldModule,
@@ -25,7 +29,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatIconModule,
     MatRadioModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule
   ]
 })
 export class MaterialModule { }

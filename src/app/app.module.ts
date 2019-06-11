@@ -10,13 +10,17 @@ import { TranslateModule } from '@ngx-translate/core';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
