@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<section>
+    <form fxLayout="column" fxLayoutAlign="center center">
+      <mat-form-field appearance="standard">
+        <mat-label>Courriel</mat-label>
+        <input type="email" matInput required>
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="standard">
+        <mat-label>Mot de passe</mat-label>
+        <input type="password" matInput required>
+        <mat-icon matSuffix>lock</mat-icon>
+        <mat-hint>minimum de 3 caractères</mat-hint>
+      </mat-form-field>
+      <a routerLink="/signup">Nouveau compte</a>
+      <a routerLink="/reset-password">Mot de passe oublié?</a>
+      <button mat-raised-button color="accent">Connexion</button>
+    </form>
+  </section>
+  
