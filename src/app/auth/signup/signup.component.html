@@ -17,14 +17,6 @@
       <mat-label>Date de naissance</mat-label>
       <input type="date" matInput required>
     </mat-form-field>
-    <mat-form-field>
-      <mat-label>Sexe</mat-label>
-      <mat-select required>
-        <mat-option *ngFor="let sexe of sexes" [value]="sexe.value">
-          {{sexe.viewValue}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
     <mat-form-field appearance="standard">
       <mat-label>Mot de passe</mat-label>
       <input type="password" matInput required>
