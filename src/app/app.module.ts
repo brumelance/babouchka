@@ -8,10 +8,13 @@ import { LoginComponent } from './auth/login/login.component';
 import { AppRoutingModule } from './appp-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { MaterialModule } from './material/material.module';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { CharacterCreationComponent } from './character-creation/character-creation.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     HomeComponent,
     LoginComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    CharacterCreationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    MatTabsModule,
+    MatGridListModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     TranslateModule.forRoot()
