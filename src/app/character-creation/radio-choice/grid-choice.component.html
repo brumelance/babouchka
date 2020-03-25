@@ -1,0 +1,10 @@
+<div>
+  <strong>{{name}}</strong><a [hidden]="!selected">: {{selected}} <button mat-raised-button (click)="resetSelectedChoice()">Changer</button></a>
+  <div [hidden]="selected">
+    <mat-radio-group [(ngModel)]="selected">
+      <mat-radio-button *ngFor="let choice of choices" [value]="choice" (click)="selectChoice(choice)">
+        {{choice}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+</div>

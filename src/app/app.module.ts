@@ -9,12 +9,16 @@ import { AppRoutingModule } from './appp-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { MaterialModule } from './material/material.module';
 import {MatTabsModule} from '@angular/material/tabs';
-import {MatGridListModule} from '@angular/material/grid-list';
+import {MatRadioModule} from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { CharacterCreationComponent } from './character-creation/character-creation.component';
+import { RadioChoiceComponent } from './character-creation/radio-choice/radio-choice.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -24,19 +28,25 @@ import { CharacterCreationComponent } from './character-creation/character-creat
     LoginComponent,
     HeaderComponent,
     SidenavListComponent,
-    CharacterCreationComponent
+    CharacterCreationComponent,
+    RadioChoiceComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     MatTabsModule,
-    MatGridListModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     TranslateModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    MatDatepickerModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
